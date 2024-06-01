@@ -19,7 +19,5 @@ This project is a web scraper that collects Google Ads data for specified search
 ## Installation
 
 1. **Clone the repository:**
-
-   ```sh
-   git clone https://github.com/your-username/google-ads-scraper.git
-   cd google-ads-scraper
+   git clone https://github.com/mbrown1837/Ads-Scraper-2.0.git)
+   cd Ads-Scraper 20.
