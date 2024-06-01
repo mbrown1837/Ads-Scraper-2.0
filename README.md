@@ -1,20 +1,25 @@
-# Ads Scraper 2.0 🦅
+# Google Ads Scraper
 
+This project is a web scraper that collects Google Ads data for specified search queries. It uses Playwright to navigate Google search results and extract relevant ad information. The scraper is designed to run concurrently for multiple queries, making the data collection process efficient.
 
-## How to use it:
-1. Clone the repository using the following command:
-   ```
-   git clone https://github.com/mbrown1837/Ads-Scraper-2.0.git
-   ```
-2. Install the required dependencies using the following command:
-   ```
-   pip install -r requirements.txt
-   ```
+## Features
 
-3. Install `Chromium` browser by using this command:
-   ```
-   playwright install chromium
-   ```
+- Scrapes Google Ads data for specified search queries.
+- Uses Playwright for browser automation.
+- Handles pagination (up to the first two pages).
+- Implements error handling and retries.
+- Saves collected data to a JSON file.
+- Detailed logging for monitoring the scraping process.
 
-4. Set the necessary variables in `variables.py`.
-5. Run the `main.py` script.
+## Prerequisites
+
+- Python 3.7 or higher
+- Node.js (required for Playwright)
+
+## Installation
+
+1. **Clone the repository:**
+
+   ```sh
+   git clone https://github.com/your-username/google-ads-scraper.git
+   cd google-ads-scraper
