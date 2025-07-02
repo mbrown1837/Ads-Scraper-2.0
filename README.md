@@ -1,6 +1,15 @@
-# Google Ads Scraper
+# Ads-Scraper-2.0
 
-This project is a web scraper that collects Google Ads data for specified search queries. It uses Playwright to navigate Google search results and extract relevant ad information. The scraper is designed to run concurrently for multiple queries, making the data collection process efficient.
+🚀 A sophisticated Google Ads scraper built with Python and Playwright, featuring concurrent processing and stealth capabilities to extract sponsored advertisement data from Google search results.
+
+## ✨ Key Features
+
+- **Concurrent Processing**: Parallel scraping with ThreadPoolExecutor (max 5 workers)
+- **Advanced Stealth**: Bot detection evasion using playwright-stealth
+- **Smart Retry Logic**: 3-attempt retry mechanism with error handling
+- **Modern CSS Selectors**: Updated selectors for current Google ad structure
+- **Data Persistence**: Intelligent JSON appending to prevent data loss
+- **CSV Export**: Built-in utility for data format conversion
 
 ## Features
 

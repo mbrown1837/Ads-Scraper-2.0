@@ -5,7 +5,7 @@ from pageparser import Parser
 import logging
 from datacollector import DataCollector
 from variables import DEFAULT_TIMEOUT, SLEEP_TIME, TIMEOUT_FOR_PAGE_LOAD, HEADLESS, PROXIES
-from playwright_stealth import stealth_sync
+from playwright_stealth import Stealth
 import os
 
 # Define the path to your queries file
@@ -108,7 +108,8 @@ class GoogleBot:
                 browser = p.chromium.launch(headless=HEADLESS)
 
             page = browser.new_page()
-            stealth_sync(page)
+            stealth_obj = Stealth()
+            stealth_obj.apply_stealth_sync(page)
             page.set_default_timeout(DEFAULT_TIMEOUT)
 
             self.initialzing_objects(page)
